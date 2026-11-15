@@ -3,7 +3,7 @@
 #
 define Device/360_t5g
   $(Device/dsa-migration)
-  IMAGE_SIZE := 16064k
+  IMAGE_SIZE := 32448k
   DEVICE_VENDOR := 360
   DEVICE_MODEL := T5G
   DEVICE_VARIANT := 32M SPI-NOR
