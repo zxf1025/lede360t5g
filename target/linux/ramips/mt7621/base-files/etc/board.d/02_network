@@ -117,6 +117,7 @@ ramips_setup_interfaces()
 		ramips_switch_lan_wan "lan" "wan"
 		;;
 	asiarf,ap7621-nv1|\
+	360,t5g|\
 	beeline,smartbox-flash|\
 	beeline,smartbox-giga|\
 	comfast,cf-ew84|\
