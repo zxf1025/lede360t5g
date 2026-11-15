@@ -1,7 +1,16 @@
 #
 # MT7621 Profiles
 #
-
+define Device/360_t5g
+  $(Device/dsa-migration)
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := 360
+  DEVICE_MODEL := T5G
+  DEVICE_VARIANT := 32M SPI-NOR
+  DEVICE_DTS := mt7621_360_T5G
+  DEVICE_PACKAGES := kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap
+endef
+TARGET_DEVICES += 360_t5g
 include ./common-sercomm.mk
 include ./common-tp-link.mk
 
